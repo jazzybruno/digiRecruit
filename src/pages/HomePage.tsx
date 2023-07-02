@@ -1,6 +1,7 @@
 import AboutComponent from "../components/AboutComponet";
 import Header from "../components/Header";
 import HomeComponent from "../components/HomeComponent";
+import StatisticsComponent from "../components/StatisticsComponent";
 
 const HomePage = () => {
     return ( 
@@ -8,6 +9,7 @@ const HomePage = () => {
             <Header></Header>
             <HomeComponent></HomeComponent>
             <AboutComponent></AboutComponent>
+            <StatisticsComponent></StatisticsComponent>
         </div>
      );
 }
