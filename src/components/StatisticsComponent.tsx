@@ -2,7 +2,7 @@ import hiring from '../images/hiringEdited.png'
 
 const StatisticsComponent = () => {
     return ( 
-       <div className="flex flex-row justify-center items-center w-[100%] bg-[rgb(216,241,248)] ">
+       <div className="flex h-[100vh] flex-row justify-center items-center w-[100%] bg-[#f0fbfe]">
         {/* the image div  */}
                   <div className="h-[100%] w-[50%] flex flex-row justify-center items-center">
                     <img src={hiring} alt="" />

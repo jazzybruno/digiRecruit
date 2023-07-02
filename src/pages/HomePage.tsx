@@ -3,6 +3,7 @@ import AssuranceComponent from "../components/AssuranceComponent";
 import FeedBackComponent from "../components/FeedBackComponent";
 import Header from "../components/Header";
 import HomeComponent from "../components/HomeComponent";
+import ReadyToStartComponent from "../components/ReadyToStartComponent";
 import StatisticsComponent from "../components/StatisticsComponent";
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
             <StatisticsComponent></StatisticsComponent>
             <AssuranceComponent></AssuranceComponent>
             <FeedBackComponent></FeedBackComponent>
+            <ReadyToStartComponent></ReadyToStartComponent>
         </div>
      );
 }

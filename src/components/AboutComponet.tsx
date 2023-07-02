@@ -9,7 +9,7 @@ const AboutComponent = () => {
         {"key" : 6 , "title" : "Diverse Sourcing Options" , "body" : "Digital recruitment allows employers to access a larger pool of talent beyond their local area." , "color" : "#518bf2" , "avatar" : 6 },
     ]
     return ( 
-        <div className='w-[100%] flex flex-row justify-center items-center mt-10 gap-5'> 
+        <div className='w-[100%] h-[100vh] flex flex-row justify-center items-center mt-10 gap-5'> 
             {/* the few details part  */}
            <div className='flex flex-col w-[35%] justify-center items-center space-y-2'>
             <h1 className='text-black font-bold text-center'>Why Choose </h1>
