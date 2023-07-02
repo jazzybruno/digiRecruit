@@ -6,6 +6,9 @@ import { BiTimeFive } from "react-icons/bi";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiBrain } from "react-icons/gi";
 import { FaEnvira } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const LargeAvatar = styled(Avatar)(({ theme }) => ({
   width: theme.spacing(8),
@@ -20,9 +23,17 @@ type Props = {
 };
 
 const WhyChooseComp = (props: Props) => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 750,
+    });
+  } , [])
+
+
   const iconSize = "text-3xl";
   return (
-    <div className="flex flex-col  w-[30%] space-y-2 p-2">
+    <div data-aos="fade-up" className="flex flex-col  w-[30%] space-y-2 p-2">
       <div>
         <LargeAvatar sx={{ bgcolor: props.bgcolor, padding: "4px" }}>
           {props.avatar === 1 ? (

@@ -1,5 +1,17 @@
 import WhyChooseComp from './WhyChooseComp';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
 const AboutComponent = () => {
+
+    useEffect(()=>{
+        AOS.init({
+          duration: 750,
+        });
+      } , [])
+
     const data = [
         {"key" : 1 , "title" : "Wider Reach" , "body" : "Digital recruitment allows employers to access a larger pool of talent beyond their local area" , "color" : "#ff82bb" , "avatar" : 1 },
         {"key" : 2 , "title" : "Cost-Effectiveness" , "body" : "Digital recruitment allows employers to access a larger pool of talent beyond their local area." , "color" : "#67c340" , "avatar" : 2 },
@@ -11,7 +23,7 @@ const AboutComponent = () => {
     return ( 
         <div className='w-[100%] h-[100vh] flex flex-row justify-center items-center mt-10 gap-5'> 
             {/* the few details part  */}
-           <div className='flex flex-col w-[35%] justify-center items-center space-y-2'>
+           <div data-aos="fade-up" className='flex flex-col w-[35%] justify-center items-center space-y-4'>
             <h1 className='text-black font-bold text-center'>Why Choose </h1>
             <div className='text-2xl'>LOGO</div>
             <div className='text-xl w-[70%] text-center '>Look into yourself and get something in return as your achievement</div>

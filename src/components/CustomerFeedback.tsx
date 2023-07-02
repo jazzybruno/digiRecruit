@@ -2,15 +2,25 @@ import Avatar from "@mui/material/Avatar";
 import { BsStarFill } from "react-icons/bs";
 import me from "../images/me.jpg";
 import { styled } from "@mui/material/styles";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LargeAvatar = styled(Avatar)(({ theme }) => ({
   width: theme.spacing(8),
   height: theme.spacing(8),
 }));
 
-const CustomerFeedback = () => {
+const CustomerFeedback  :React.FC = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000,
+    });
+  } , [])
+
   return (
-    <div className="bg-white rounded-xl shadow-md w-[30%]">
+    <div  data-aos="zoom-in" className="animated-div bg-white  rounded-xl shadow-md w-[30%] translate-y-4 transition-all duration-500">
       <div className="flex  gap-5 flex-row items-center pl-10 pt-10 pb-2">
         <LargeAvatar alt="Bemy Sharp" src={me} />
         <BsStarFill className="text-yellow-400 text-xl" />
