@@ -1,3 +1,8 @@
 #mainDiv{
     background-image: url("../images/teal.svg");
 }
+
+#feebBack{
+    background-image: url("../images/realRect.svg");
+    /* background-repeat: no-repeat; */
+}
