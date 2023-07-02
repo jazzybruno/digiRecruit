@@ -1,6 +1,7 @@
 import AboutComponent from "../components/AboutComponet";
 import AssuranceComponent from "../components/AssuranceComponent";
 import FeedBackComponent from "../components/FeedBackComponent";
+import FooterComponent from "../components/FooterComponent";
 import Header from "../components/Header";
 import HomeComponent from "../components/HomeComponent";
 import ReadyToStartComponent from "../components/ReadyToStartComponent";
@@ -16,6 +17,7 @@ const HomePage = () => {
             <AssuranceComponent></AssuranceComponent>
             <FeedBackComponent></FeedBackComponent>
             <ReadyToStartComponent></ReadyToStartComponent>
+            <FooterComponent></FooterComponent>
         </div>
      );
 }
