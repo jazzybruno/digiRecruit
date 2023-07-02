@@ -1,11 +1,11 @@
-import group2 from "../images/group2.svg"
+import { BsGlobeAmericas } from "react-icons/bs";
 import "../assets/Othercss.css"
 import Avatar from '@mui/material/Avatar';
 import Me from "../images/me.jpg"
 
 const HomeComponent = () => {
     return (  
-        <div className="align items-center justify-center p-5">
+        <div className="align items-center justify-center p-5 w-[100%]">
         {/* the image photo */}
             <div id="mainDiv" className="flex items-center justify-center w-[100%]">
             <div className="w-[70%] bg-white-200  p-20 flex flex-col space-y-24">
