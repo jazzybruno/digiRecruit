@@ -23,7 +23,7 @@ const FooterComponent = () => {
               value={"Enter the Email?"}
               className="p-2 w-[50%] bg-[#242e42] rounded-sm text-white"
             />
-            <button className=" bg-customTeal py-2 px-5 rounded-sm border-2 ml-2 font-bold">
+            <button className=" bg-sky-700 py-2 px-5 rounded-sm border-2 ml-2 font-bold">
               Submit
             </button>
           </div>

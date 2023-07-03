@@ -1,18 +1,29 @@
 import { BiLogoFacebook, BiLogoGithub, BiLogoGoogle } from "react-icons/bi";
+import left from "../images/left.svg"
+import right from "../images/right.svg"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Signup = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   const otherTypes =
-    "bg-white border-2 text-customTeal py-2 px-5 border-customTeal rounded-xl font-bold flex flex-row gap-3 justify-center items-center";
-  const loginBtn = "bg-customTeal py-2 px-10 text-white font-bold rounded-lg";
+    "bg-white border-2 text-sky-700 py-2 px-5 border-sky-700 rounded-xl font-bold flex flex-row gap-3 justify-center items-center";
+  const loginBtn = "bg-sky-700 py-2 px-10 text-white font-bold rounded-lg";
   const inputs = "bg-white w-[100%] py-1.5 border-2 border-gray-300 rounded-md";
   return (
     <div className="w-[100%] h-[100vh] bg-white flex flex-row gap-0 ">
       {/* the first images div the one in the bottom  */}
-      <div className="bg-teal-300 w-[25%] flex justify-start items-end">
-        The First Part
+      <div className="bg-white w-[25%] flex justify-start items-end">
+      <div data-aos="fade-right" className="h-[80%]"><img className="h-[100%]"  src={left} alt="" /></div>
       </div>
       {/* the forms part or div  */}
-      <div className="bg-white w-[50%] flex flex-col justify-start items-center mt-10">
+      <div data-aos="fade-up" className="bg-white w-[50%] flex flex-col justify-start items-center mt-10">
         <form action="">
           <div className="flex flex-col space-y-6">
             <div>
@@ -44,7 +55,7 @@ const Signup = () => {
 
             <div className="flex flex-row w-[100%] justify-between items-center">
               <button className={loginBtn}>Signup</button>
-              <a className="text-customTeal font-bold cursor-pointer" href="#">
+              <a className="text-sky-700 font-bold cursor-pointer" href="#">
                 Terms and Services
               </a>
             </div>
@@ -53,7 +64,7 @@ const Signup = () => {
           <div className="mt-2">
             <p className="text-black font-bold">
              Already have an account?{" "}
-              <span className="text-customTeal">
+              <span className="text-sky-700">
                 <a href="#">Login</a>
               </span>
             </p>
@@ -84,8 +95,8 @@ const Signup = () => {
         </form>
       </div>
       {/* the second image div the one in the top  */}
-      <div className="bg-teal-300 w-[25%] flex justify-end items-baseline">
-        The Third Part
+      <div className="bg-white w-[25%] flex justify-end items-baseline">
+      <div  data-aos="fade-left" className="h-[80%]"><img className="h-[100%]"  src={right} alt="" /></div>
       </div>
     </div>
   );

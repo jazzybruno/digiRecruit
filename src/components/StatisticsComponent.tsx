@@ -20,7 +20,7 @@ const StatisticsComponent = () => {
         {/* the statistics div  */}
                   <div data-aos="fade-up" className="w-[50%] flex flex-col justify-center items-start p-20 space-y-14">
                     <div className="flex flex-col space-y-4">
-                    <h1 className="text-black w-[80%] "><span className="text-customTeal">World's</span> best success on <span className="text-customPink">Hiring</span></h1>
+                    <h1 className="text-black w-[80%] "><span className="text-customTeal">World's</span> best success on <span className="text-sky-700">Hiring</span></h1>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio minima minus maxime quidem, eius corporis doloribus ullam cum, vitae qui? Et dolor laboriosam ratione temporibus mollitia amet cumque a.</p>
                     </div>
                    <div className=" w-[80%] flex flex-row justify-between items-start">

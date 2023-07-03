@@ -17,7 +17,7 @@ const AssuranceComponent = () => {
                 <p className="w-[70%]">This is the best place to  get started with your dreams as you will get your job dream on this site and also get connection to outer companies</p>
                </div>
                 <div className=" w-[73%] flex flex-row items-start ">
-                <a href="#" className="py-3 rounded-md px-5 font-bold bg-customTeal text-white border-1 border-white shadow-sm shadow-customTeal">Get Started</a>
+                <a href="#" className="py-3 rounded-md px-5 font-bold bg-sky-700 text-white border-1 border-white shadow-sm shadow-customTeal">Get Started</a>
                 </div>
             </div>
             <div data-aos="zoom-in" className=" h-[100vh] w-[50%] flex flex-row justify-center items-center">

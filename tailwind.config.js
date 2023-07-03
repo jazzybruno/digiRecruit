@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         customTeal : '#38b2d3',
-        customPink : '#f17ab2'
+        customPink : '#f17ab2',
+        brand : "#0B85E2"
       }
     },
     fontFamily: {
