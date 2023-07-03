@@ -20,10 +20,10 @@ const Header = () => {
         </div>
         {/* the login and sign up buttons */}
         <div className="flex flex-row bg-white gap-5 font-normal">
-          <a className="border-sky-500  border-[1px] px-5 py-2 rounded-md text-sky-500 cursor-pointer transition duration-700 ease-in-out hover:scale-100 hover:bg-sky-500 hover:text-white ">
+          <a href="/signup" className="border-sky-500  border-[1px] px-5 py-2 rounded-md text-sky-500 cursor-pointer transition duration-700 ease-in-out hover:scale-100 hover:bg-sky-500 hover:text-white ">
             Signup
           </a>
-          <a className="bg-sky-500 border-0 px-5 py-2 rounded-md text-white cursor-pointer transition duration-700 ease-in-out  hover:bg-white hover:text-[#38b2d3] hover:border-2 hover:border-[#38b2d3] ">
+          <a href="/login" className="bg-sky-500 border-0 px-5 py-2 rounded-md text-white cursor-pointer transition duration-700 ease-in-out  hover:bg-white hover:text-[#38b2d3] hover:border-2 hover:border-[#38b2d3] ">
             Login
           </a>
         </div>

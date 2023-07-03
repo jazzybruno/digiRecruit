@@ -6,8 +6,8 @@ const ReadyToStartComponent = () => {
                     <h1 className="text-white font-bold w-[80%]">Are you ready to start Right now!</h1>
                 </div>
                 <div className="w-[50%] flex justify-center items-center gap-5">
-                    <a className="px-5 py-3.5 bg-white rounded-lg text-[#ee6370] font-bold border-2 border-[#ee6370]" href="#">Get Started</a>
-                    <a className="px-5 py-3 text-white rounded-lg bg-[#ee6370] font-bold  border-2 border-white" href="#">Contact Us</a>
+                    <a className="px-5 py-3.5 bg-white rounded-lg text-[#ee6370] font-bold border-2 border-[#ee6370]" href="/signup">Get Started</a>
+                    <a className="px-5 py-3 text-white rounded-lg bg-[#ee6370] font-bold  border-2 border-white" href="/login">Contact Us</a>
                 </div>
             </div>
             </div>

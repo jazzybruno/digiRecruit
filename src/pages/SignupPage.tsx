@@ -65,13 +65,13 @@ const Signup = () => {
             <p className="text-black font-bold">
              Already have an account?{" "}
               <span className="text-sky-700">
-                <a href="#">Login</a>
+                <a href="/login">Login</a>
               </span>
             </p>
           </div>
 
           <div className="flex flex-col space-y-4 mt-6">
-            <div className="flex flex-row w-[100%] justify-center items-center gap-4">
+            <div className="flex flex-row w-[100%] justify-center items-enter gap-4">
               <hr className="bg-gray-300 w-[30%] h-0.5" />
               <p className="text-black font-bold"> Or Signup with </p>
               <hr className="bg-gray-300 w-[30%] h-0.5" />

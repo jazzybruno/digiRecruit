@@ -37,7 +37,7 @@ const HomeComponent = () => {
               Where people seeking jobs fuel their life long careers
             </p>
             <a
-              href="#"
+              href="/signup"
               className="bg-sky-700  hover:bg-sky-900 font-bold px-8 py-4 hover:shadow-sm shadow-sky-900 rounded-md text-white cursor-pointer transition duration-100 ease-in-out"
             >
               Get Started

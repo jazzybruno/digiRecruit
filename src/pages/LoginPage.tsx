@@ -54,7 +54,7 @@ const Forms = () => {
             <p className="text-black font-bold">
               Do not have an account?{" "}
               <span className="text-sky-700">
-                <a href="#">Create One</a>
+                <a href="/signup">Create One</a>
               </span>
             </p>
           </div>
