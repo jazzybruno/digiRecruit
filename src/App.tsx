@@ -1,12 +1,8 @@
-import Forms from './pages/Forms'
-import HomePage from './pages/HomePage'
+import Signup from "./pages/SignupPage"
 
 function App() {
   return (
-<>
-{/* <HomePage></HomePage> */}
-<Forms/>
-</>
+<Signup />
   )
 }
 
