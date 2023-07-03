@@ -3,19 +3,95 @@ import left from "../images/left.svg"
 import right from "../images/right.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
+import Toastify from 'toastify-js';
+import 'toastify-js/src/toastify.css';
 
 const Signup = () => {
+
+  const   [email , setEmail] = useState("");  
+  const   [password , setPassword] = useState("");
+  const   [inputs , setInputs] = useState("bg-white w-[100%] py-1.5 border-2 border-gray-300 rounded-md")
+  const [natId , setNatId] = useState("");
+  const [username , setUsername] = useState("");
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
 
+  const handleSignup  = (e : any) =>{
+    e.preventDefault();
+    if (
+      email.trim() === "" ||
+      password.trim() === "" ||
+      natId.trim() === "" ||
+      username.trim() === "" ||
+      email === null ||
+      email === undefined ||
+      password === null ||
+      password === undefined ||
+      natId === null ||
+      natId === undefined ||
+      username === null ||
+      username === undefined
+    ) {
+      Toastify({
+        text: "Please fill in all the required fields",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "red"
+      }).showToast();
+    
+       setInputs("bg-white w-[100%] py-1.5 border-2 border-red-500 rounded-md");
+    }else{
+    setInputs("bg-white w-[100%] py-1.5 border-2 border-gray-300 rounded-md");
+    let users = localStorage.getItem("user");
+    if(users == null || users == undefined){
+      let users = [
+        {
+          email: email,
+          password: password,
+          natId: natId,
+          username: username
+        }
+      ]
+      localStorage.setItem("user" , JSON.stringify(users));
+      Toastify({
+        text: "SuccessFully Registed the User",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "green"
+      }).showToast();
+    }else{
+      let realUsers = JSON.parse(users);
+      realUsers.push({
+        email: email,
+        password: password,
+        natId: natId,
+        username: username
+      })
+
+      localStorage.setItem("user" , JSON.stringify(realUsers));
+
+      Toastify({
+        text: "SuccessFully Registed the User",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "green"
+      }).showToast();
+
+    }
+  }
+}
+
   const otherTypes =
     "bg-white border-2 text-sky-700 py-2 px-5 border-sky-700 rounded-xl font-bold flex flex-row gap-3 justify-center items-center";
   const loginBtn = "bg-sky-700 py-2 px-10 text-white font-bold rounded-lg";
-  const inputs = "bg-white w-[100%] py-1.5 border-2 border-gray-300 rounded-md";
   return (
     <div className="w-[100%] h-[100vh] bg-white flex flex-row gap-0 ">
       {/* the first images div the one in the bottom  */}
@@ -35,26 +111,34 @@ const Signup = () => {
 
             <div>
               <label htmlFor="">Email ID</label>
-              <input className={inputs} type="text" name="" id="" />
+              <input onChange={(e)=>{
+                setEmail(e.target.value)
+              }} className={inputs} type="email" name="" id="" />
             </div>
 
             <div>
               <label htmlFor="">UserName</label>
-              <input className={inputs} type="text" name="" id="" />
+              <input onChange={(e)=>{
+                setUsername(e.target.value)
+              }} className={inputs} type="text" name="" id="" />
             </div>
 
             <div>
               <label htmlFor="">National ID</label>
-              <input className={inputs} type="text" name="" id="" />
+              <input onChange={(e)=>{
+                setNatId(e.target.value)
+              }} className={inputs} type="text" name="" id="" />
             </div>
 
             <div>
               <label htmlFor="">Password</label>
-              <input className={inputs} type="text" name="" id="" />
+              <input onChange={(e)=>{
+                setPassword(e.target.value)
+              }} className={inputs} type="password" name="" id="" />
             </div>
 
             <div className="flex flex-row w-[100%] justify-between items-center">
-              <button className={loginBtn}>Signup</button>
+              <button onClick={handleSignup} className={loginBtn}>Signup</button>
               <a className="text-sky-700 font-bold cursor-pointer" href="#">
                 Terms and Services
               </a>

@@ -2,7 +2,7 @@ import AboutComponent from "../components/AboutComponet";
 import AssuranceComponent from "../components/AssuranceComponent";
 import FeedBackComponent from "../components/FeedBackComponent";
 import FooterComponent from "../components/FooterComponent";
-import Header from "../components/Header";
+import Header from "../components/NavBar";
 import HomeComponent from "../components/HomeComponent";
 import ReadyToStartComponent from "../components/ReadyToStartComponent";
 import StatisticsComponent from "../components/StatisticsComponent";
